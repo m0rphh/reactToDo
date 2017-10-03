@@ -1,8 +1,10 @@
-@import "base/variables";
-
-// foundation
-@import "base/foundation-settings";
-@import "foundation";
-@include foundation-everything;
-
+// @import "base/variables";
+//
+// // foundation
+// @import "base/foundation-settings";
+// @import "foundation";
+// @include foundation-everything;
+.add-button {
+  background: lightblue;
+}
 // Components
