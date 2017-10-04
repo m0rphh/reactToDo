@@ -13,7 +13,7 @@ var TodoSearch = React.createClass({
     return (
       <div>
         <div>
-          <input type="search" ref="searchText" placeholder="Search todos" onChange={this.handleSearch}/>
+          <input type="search" className="form-control" ref="searchText" placeholder="Search todos" onChange={this.handleSearch}/>
         </div>
         <div>
           <label>

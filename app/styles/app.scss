@@ -1,10 +1,72 @@
-// @import "base/variables";
-//
-// // foundation
-// @import "base/foundation-settings";
-// @import "foundation";
-// @include foundation-everything;
+
+@import "components/container";
+@import "components/page-title";
+@import "components/todo";
+
+
 .add-button {
   background: lightblue;
+  border: none;
+  outline: none;
+  display: block;
+}
+body {
+  // background: url('/Users/morph/Desktop/ReactToDo/app/public/img/bg.jpg') no-repeat center;
+  // background-size: cover;
+
+}
+h1 {
+      text-align: center;
+}
+.container {
+  height: 100vh;
+}
+.btn {
+  border-radius: 0;
+border: none;
+outline: none;
+width: 50%;
+display: block;
+margin: 0 auto;
+}
+$opacity: 0.9;
+$background-grey: #f8f8f8;
+.wrapper {
+max-width: 500px;
+display: block;
+margin: 100px auto;
+background: rgba($background-grey, $opacity);
+padding: 30px;
+min-height: 432px;
+}
+.form-control {
+  margin-bottom: 25px;
+}
+.todo-list {
+
+}
+.todo {
+
+}
+.todo-completed {
+
+}
+input[type="checkbox"] {
+  float: left;
+  margin-right: 15px;
+}
+.container__search {
+  border: 1px solid #ccc;
+}
+.text {
+  float: left;
+  font-size: 22px;
+}
+.text::first-letter {
+  text-transform: uppercase;
+}
+.date {
+  display: block;
+  clear: both;
 }
 // Components

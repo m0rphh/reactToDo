@@ -11,10 +11,13 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.9.1",
+    "bootstrap": "^4.0.0-beta",
     "express": "^4.13.4",
-    "react": "^0.14.7",
+    "popper.js": "^1.12.5",
+    "react": "^0.14.9",
     "react-addons-test-utils": "^0.14.7",
-    "react-dom": "^0.14.7",
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^0.14.9",
     "react-router": "^2.0.0"
   },
   "devDependencies": {
@@ -34,6 +37,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.4.5",
+    "moment": "^2.18.1",
     "node-sass": "^3.4.2",
     "node-uuid": "^1.4.8",
     "sass-loader": "^3.1.2",

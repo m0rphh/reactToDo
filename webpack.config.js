@@ -12,8 +12,17 @@ module.exports = {
   },
   plugins: [
     new webpack.ProvidePlugin({
-      '$': 'jquery',
-      'jQuery': 'jquery'
+      // '$': 'jquery',
+      // 'jQuery': 'jquery',
+      // Popper: ['popper.js', 'default'],
+        // In case you imported plugins individually, you must also require them here:
+        $: 'jquery',
+       jQuery: 'jquery',
+       'window.jQuery': 'jquery',
+       Popper: ['popper.js', 'default'],
+       // In case you imported plugins individually, you must also require them here:
+       Util: "exports-loader?Util!bootstrap/js/dist/util",
+       Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
     })
   ],
   output: {
@@ -42,6 +51,7 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
       }
+
     ]
   },
   sassLoader: {
